@@ -1,4 +1,4 @@
-Eigentlich hatte ich vor Jahren beschlossen, nie wieder ein Blog zu betreiben, da mir die Sache irgendwann langweilig wurde. Und überhaupt hat man ja alles nur noch in diverse Social Media gepostet. Für mich haben sich die sozialen Medien aber irgendwann als Zeitverschwendung ohne Mehrwert herausgestellt. So kam es, dass ich irgendwann die Idee hatte, ganz altmodisch wieder ein Blog zu befüllen.
+Eigentlich hatte ich vor Jahren beschlossen, nie wieder ein Blog zu betreiben, da mir die Sache irgendwann langweilig wurde. Und überhaupt hat man ja alles nur noch in diverse Social Media gepostet. Für mich haben sich die sozialen Medien aber irgendwann als Zeitverschwendung ohne Mehrwert herausgestellt. So kam es, dass ich neulich doch wieder die Idee hatte, ganz altmodisch ein Blog zu befüllen.
 
 ![](typvorpc.jpeg "Ein Mann sitzt vor einem alten PC in einem Raum voller Bücher und Zeitschriften.")
 
