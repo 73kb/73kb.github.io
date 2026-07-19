@@ -1,37 +1,30 @@
 [
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "datenschutz.html",
+    "href": "datenschutz.html",
+    "title": "Datenschutz",
     "section": "",
-    "text": "This is a post with executable code."
-  },
-  {
-    "objectID": "posts/test-post/index.html",
-    "href": "posts/test-post/index.html",
-    "title": "Test Post",
-    "section": "",
-    "text": "Qui unde eum eos porro quod. Voluptatem maxime et delectus. Eaque rerum eum nemo mollitia reiciendis ut quas consequatur. Fugit harum minima voluptate.\nAut omnis non excepturi est placeat repudiandae alias corrupti. Rerum consequuntur fugiat eos qui dolorem aut. Sit tenetur ex aut ipsum.\nId porro iusto consequatur et nihil aspernatur labore. Sed ipsam optio deleniti ratione modi eum nemo. Molestias et neque magni reprehenderit illo. Autem velit similique autem aperiam consequatur.\nIpsum reiciendis maiores aliquid dignissimos necessitatibus quam in sunt. A quidem commodi accusamus. Nihil est quis vel sint eligendi rerum. Ut ex optio et. Veritatis quasi consequuntur aut omnis. Nam est ipsam saepe.\nSed dolorum id et blanditiis enim. Veritatis et mollitia molestias. Aut ea quo non sit."
+    "text": "Dieses Weblog wird mit Quarto betrieben, einer quelloffenen Anwendung, die statische Seiten erzeugt. Es werden keine Cookies gesetzt, und ebenso werden keinerlei Daten erhoben, um die Aktivitäten der Besucher:innen nachzuverfolgen.\nAls Werkzeug zur Analyse der Seitenaufrufe wird die ebenfalls quelloffene Software Goatcounter verwendet, die keine Cookies setzt und nach eigener Aussage nicht einmal eine Datenschutzerklärung benötigt. Wer es genauer wissen möchte, kann einsehen, welche Daten Goatcounter erhebt und speichert, und die hauseigene Datenschutzerklärung lesen.\nFür die Kommentarfunktion wird die quelloffene Software Giscus verwendet. Um einen Kommentar zu hinterlassen, ist eine Registrierung bei GitHub erforderlich; die Kommentare werden in den Diskussionen des Repositorys dieser Website gespeichert. Einsehbar sind für mich lediglich der Kommentar selbst sowie der Benutzername. Auf Wunsch kann ich einen Kommentar auch löschen. Wie GitHub jedoch mit den im Rahmen der Registrierung gespeicherten Daten verfährt, entzieht sich meiner Einflussnahme.\nFalls du weitere Fragen hast, kannst du mir gerne eine E-Mail an vorname.name@gmail.com schreiben.\nBild: Nano Banana"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Autor",
     "section": "",
-    "text": "About this blog"
+    "text": "Mein Name ist Frank Mazny, ich wurde 1973 geboren und lebe in einer eher ruralen Ecke des Ruhrgebiets. Von Beruf bin ich Krankenpfleger und arbeite in einer niedrigschwelligen Einrichtung der Suchthilfe. In meiner Freizeit beschäftige ich mich vorzugsweise mit Büchern, Musik, Klemmbausteinen und allerlei digitalen Bastelkram.\nDer Name 73KB ist eine kleine Hommage an meine Wurzeln, als Computer noch mit 8-Bit-Prozessoren arbeiteten, 64KB RAM für Anwendungen ausreichten, und man die beigelegte Software in Computer-Magazinen noch selbst abtippen musste. Dieses Weblog soll mir in erster Linie als persönliches Nachschlagewerk, Notizbuch und digitaler Sammelordner dienen.\nAlle Inhalte stehen, falls nicht anderweitig angegeben, unter einer CC BY-NC-SA 4.0.-Lizenz.\nE-Mails können gerne an vorname.nachname@gmail.com geschickt werden.\nBild: Nano Banana"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "73kb",
+    "title": "73KB",
     "section": "",
-    "text": "Test Post\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nJul 5, 2026\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nJul 5, 2026\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJul 2, 2026\n\n\nTristan O’Malley\n\n\n\n\n\nNo matching items"
+    "text": "Es ist vollbracht!\n\n\n\nquarto\n\nsoftware\n\nmarkdown\n\n\n\nWie ich sehr lange nichts mehr in Blogs schreiben wollte, aber dann doch wieder Lust dazu bekam.\n\n\n\n\n\n19.07.2026\n\n\nFrank Mazny\n\n\n\n\n\nKeine Treffer"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "posts/es-ist-vollbracht/index.html",
+    "href": "posts/es-ist-vollbracht/index.html",
+    "title": "Es ist vollbracht!",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "Eigentlich hatte ich vor Jahren beschlossen, nie wieder ein Blog zu betreiben, da mir die Sache irgendwann langweilig wurde. Und überhaupt hat man ja alles nur noch in diverse Social Media gepostet. Für mich haben sich die sozialen Medien aber irgendwann als Zeitverschwendung ohne Mehrwert herausgestellt. So kam es, dass ich irgendwann die Idee hatte, ganz altmodisch wieder ein Blog zu befüllen.\n\n\n\nBild: Nano Banana\n\n\nMit Quarto habe ich zudem einen wunderbaren Werkzeugkasten entdeckt, mit dem sich - nicht nur, aber eben auch - prima Weblogs mit statischen Seiten bauen lassen. So war der Basteltrieb geweckt und ich brauchte mich nur noch in die Funktionen von Quarto einlesen. Ebenfalls sehr nützlich waren die Artikel von Beatriz Milz , Samantha Shanny-Csik und Albert Rapp. Zwar habe ich die gesamte Bandbreite von Quarto noch lange nicht ausgeschöpft, aber der Rohbau für ein Weblog steht auf jeden Fall. Aktuell überlege ich noch, die Kommentarfunktion durch Cusdis zu ersetzen, aber das eilt erst mal nicht.\nDann kann es ja losgehen!"
   }
 ]
