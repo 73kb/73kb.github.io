@@ -1,1 +1,9 @@
 /* css styles */
+code {
+    background-color: #f0f0f0; /* Light gray background */
+    color: #d63384; /* Pink text color */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font */
+    padding: 2px 4px; /* Padding around the text */
+    border-radius: 4px; /* Rounded corners */
+}
+

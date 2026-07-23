@@ -10,7 +10,78 @@
 <atom:link href="https://73kb.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Früher waren Computer noch aus Holz</description>
 <generator>quarto-1.9.38</generator>
-<lastBuildDate>Sat, 18 Jul 2026 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 22 Jul 2026 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Linux auf einem iMac installieren</title>
+  <dc:creator>Frank Mazny</dc:creator>
+  <link>https://73kb.github.io/posts/linux-auf-einem-imac-installieren/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://73kb.github.io/posts/linux-auf-einem-imac-installieren/dachs_am_schreibtisch.png" title="Zeichnung: Ein Dachs in einem altmodischen Tweed-Anzug sitzt an einem hölzernen Schreibtisch auf dem ein iMac von 2019 steht und installiert darauf Linux." class="img-fluid figure-img"></p>
+<figcaption>Bild: Der Dachs sitzt am Schreibtisch und installiert Linux / Nano Banana</figcaption>
+</figure>
+</div>
+<p>Mein <a href="https://support.apple.com/de-de/111963">iMac</a> von 2019 ist mit 3,0 GHz 6‑Core Intel Core i5 und 8 GB RAM zwar nicht mehr auf dem aktuellen Stand, aber für meine Anforderungen immer noch ein brauchbarer Computer. Wäre da nicht das immer langsamere MacOS, das zum Teil auf das eingebaute <a href="https://de.wikipedia.org/wiki/Fusion_Drive">Fusion Drive</a> zurückzuführen ist. Ich habe alle von mir im Internet auffindbaren Lösungsversuche ausprobiert, eine merkbare Verbesserung hat aber alles nicht bewirkt. MacOS wurde so langsam, dass arbeiten mit dem Gerät zur Geduldsprobe wurde. Zudem fühlte ich mich an meinem eigenen Computer nicht mehr zu Hause, weil mich macOS durch seine restriktiven Maßnahmen oft nervt. Also musste eine Lösung her, und die hieß Linux.</p>
+<p>Auf Macs mit Intel-Chip ist die Installation von Linux in der Regel recht simpel. Die Ausnahme von der Regel sind allerdings Macs mit <a href="https://de.wikipedia.org/wiki/Apple_T2">T2-Chip</a>. Für Geräte, die diesen Sicherheitschip eingebaut haben, gibt es angepasste <a href="https://wiki.t2linux.org/">Linux-Distributionen</a>. Ob dein Mac den T2-Chip eingebaut hat, kannst du auf <a href="https://support.apple.com/de-de/103265">dieser Seite</a> nachsehen. <a href="https://de.ifixit.com/Anleitung/Wie+Linux+auf+einem+T2+Mac+installiert+wird/198407">Hier</a> findest du eine Anleitung für Macs mit T2-Chip.</p>
+<section id="vorbereitung" class="level2">
+<h2 class="anchored" data-anchor-id="vorbereitung">Vorbereitung</h2>
+<ul>
+<li><p><strong>Obacht</strong>: Bevor man wilde Sachen auf seinem Computer anstellt, sollte man immer alle wichtigen Daten sichern!</p></li>
+<li><p>Wir brauchen <a href="https://etcher.balena.io/">Balena Etcher</a>, ein Programm mit dem bootfähige USB-Sticks erstellt werden können.</p></li>
+<li><p>Ein Linux herunterladen. Ich habe mich für <a href="https://www.linuxmint.com/">Linux Mint Cinnamon Edition</a> entschieden, weil es eine breite Hardware-Unterstützung bietet.</p></li>
+<li><p>Du brauchst einen USB-Stick mit mindestens 4 GB Speicherplatz.</p></li>
+</ul>
+</section>
+<section id="partitionieren" class="level2">
+<h2 class="anchored" data-anchor-id="partitionieren">Partitionieren</h2>
+<p>Für eine Dual-Boot-Installation müssen wir die Partition von macOS verkleinern, um Platz für Linux zu schaffen. Dazu öffnest du das Festplattendienstprogramm: Programme → Dienstprogramme → Festplattendienstprogramm.</p>
+<ul>
+<li><p>Wähle deine interne Festplatte (die oberste Ebene, nicht das APFS‑Volume).</p></li>
+<li><p>Klicke auf Partitionieren.</p></li>
+<li><p>Verkleinere die macOS‑Partition um mindestens 30–60 GB.</p></li>
+<li><p>Erstelle keine neue Partition – lasse den Bereich einfach unformatiert.</p></li>
+</ul>
+</section>
+<section id="usb-stick-erstellen" class="level2">
+<h2 class="anchored" data-anchor-id="usb-stick-erstellen">USB-Stick erstellen</h2>
+<ul>
+<li><p>Starte Balena Etcher.</p></li>
+<li><p>Klicke auf “Flash from file”, und wähle die Linux‑ISO-Datei aus.</p></li>
+<li><p>Wähle deinen USB‑Stick.</p></li>
+<li><p>Klicke “Flash” und jetzt wird Linux Mint auf den Stick gepackt.</p></li>
+</ul>
+</section>
+<section id="linux-installieren" class="level2">
+<h2 class="anchored" data-anchor-id="linux-installieren">Linux installieren</h2>
+<ul>
+<li><p>Stecke den USB-Stick ein.</p></li>
+<li><p>Halte beim Starten die Option (⌥)‑Taste gedrückt.</p></li>
+<li><p>Wähle im Boot-Menü die Option EFI-Boot.</p></li>
+<li><p>Wähle “Start Linux Mint”. Jetzt wird die Live-CD gestartet. Du kannst alles ausprobieren, ohne dass Änderungen am Rechner vorgenommen werden.</p></li>
+<li><p>Klicke auf “Install Linux Mint” auf dem Desktop. Jetzt kannst du die Sprache der Installation einstellen und dich mit dem Internet verbinden.Auch die Multimedia-Treiber solltest du installieren.</p></li>
+<li><p>Im nächsten Punkt der Installation wird erkannt, dass schon ein Betriebssystem auf dem Gerät existiert und Mint wird sich dazu installieren. Willst du macOS löschen und nur Linux Mint installieren, klicke auf “Festplatte löschen”.</p></li>
+<li><p>Im weiteren Verlauf wird Linux Mint installiert und mit Updates versorgt. Danach kannst du den USB-Stick entfernen und den iMac neu starten. Du solltest nun ein Bootmenü sehen, indem du zwischen macOS und Linux auswählen kannst.</p></li>
+</ul>
+<p>Schon fertig! Was ich partout nicht ans Laufen bekommen habe, sind die eingebaute WIFI-Karte und Audio. Ersteres ist nicht schlimm, da ich sowieso am Kabel hänge und Audio funktioniert seltsamerweise über einen per Bluetooth gekoppelten Lautsprecher. Damit kann ich leben. Ansonsten läuft Linux Mint auf dem iMac ziemlich flott und die iCloud ist zumindest über den Browser auch benutzbar. Insgesamt bin ich sehr zufrieden. <a href="https://linuxsimply.com/linux-basics/os-installation/dual-boot/linux-mint-on-mac/">Hier</a> findest du noch eine sehr ausführliche und bebilderte Anleitung zur Installation.</p>
+<p>Hinweis: <em>Alle Angaben ohne Gewähr. Ich bin nicht schuld, wenn dein Computer explodiert.</em></p>
+
+
+</section>
+
+ ]]></description>
+  <category>Linux</category>
+  <category>iMac</category>
+  <category>Anleitung</category>
+  <guid>https://73kb.github.io/posts/linux-auf-einem-imac-installieren/</guid>
+  <pubDate>Wed, 22 Jul 2026 22:00:00 GMT</pubDate>
+  <media:content url="https://73kb.github.io/posts/linux-auf-einem-imac-installieren/dachs_am_schreibtisch.png" medium="image" type="image/png" height="79" width="144"/>
+</item>
 <item>
   <title>Es ist vollbracht!</title>
   <dc:creator>Frank Mazny</dc:creator>

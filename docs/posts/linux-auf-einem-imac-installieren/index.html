@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Frank Mazny">
+<meta name="keywords" content="Linux, iMac, Anleitung">
+<meta name="description" content="Wie man auf einem iMac von 2019 macOS durch Linux Mint ersetzt, und damit wieder richtig flott macht.">
 
-<title>73KB</title>
+<title>Linux auf einem iMac installieren – 73KB</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,25 +29,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-15918177bfdae137372244dab4947c83.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-15918177bfdae137372244dab4947c83.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,78 +73,37 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Suchen"
   }
 }</script>
-<script>
+<style>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: black;
+      }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
+      .quarto-title-block .quarto-title-banner {
+        color: black;
+background: #f0f3f5;
+      }
+</style>
 <script data-goatcounter="https://73kb.goatcounter.com/count" async="" src="//gc.zgo.at/count.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="73KB" href="index.xml" data-external="1"></head>
+<link rel="stylesheet" href="../../styles.css">
+</head>
 
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">73KB</span>
     </a>
   </div>
@@ -154,15 +114,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">Autor</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./datenschutz.html"> 
+    <a class="nav-link" href="../../datenschutz.html"> 
 <span class="menu-text">Datenschutz</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -174,95 +134,127 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Linux auf einem iMac installieren</h1>
+                  <div>
+        <div class="description">
+          Wie man auf einem iMac von 2019 macOS durch Linux Mint ersetzt, und damit wieder richtig flott macht.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Linux</div>
+                <div class="quarto-category">iMac</div>
+                <div class="quarto-category">Anleitung</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Autor:in</div>
+      <div class="quarto-title-meta-contents">
+               <p>Frank Mazny </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Veröffentlichungsdatum</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">23. Juli 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+
+  <div>
+    <div class="keywords">
+      <div class="block-title">Schlüsselwörter</div>
+      <p>Linux, iMac, Anleitung</p>
+    </div>
+  </div>
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Kategorien</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">alle <span class="quarto-category-count">(2)</span></div><div class="category" data-category="QW5sZWl0dW5n">Anleitung <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aU1hYw==">iMac <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGludXg=">Linux <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWFya2Rvd24=">markdown <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cXVhcnRv">quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c29mdHdhcmU=">software <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#vorbereitung" id="toc-vorbereitung" class="nav-link active" data-scroll-target="#vorbereitung">Vorbereitung</a></li>
+  <li><a href="#partitionieren" id="toc-partitionieren" class="nav-link" data-scroll-target="#partitionieren">Partitionieren</a></li>
+  <li><a href="#usb-stick-erstellen" id="toc-usb-stick-erstellen" class="nav-link" data-scroll-target="#usb-stick-erstellen">USB-Stick erstellen</a></li>
+  <li><a href="#linux-installieren" id="toc-linux-installieren" class="nav-link" data-scroll-target="#linux-installieren">Linux installieren</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="TGludXglMkNpTWFjJTJDQW5sZWl0dW5n" data-listing-date-sort="1784757600000" data-listing-file-modified-sort="1784831354112" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="570">
-<div class="thumbnail"><a href="./posts/linux-auf-einem-imac-installieren/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/linux-auf-einem-imac-installieren/dachs_am_schreibtisch.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/linux-auf-einem-imac-installieren/index.html" class="no-external">Linux auf einem iMac installieren</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TGludXg='); return false;">Linux</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('aU1hYw=='); return false;">iMac</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QW5sZWl0dW5n'); return false;">Anleitung</div>
-
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="dachs_am_schreibtisch.png" title="Zeichnung: Ein Dachs in einem altmodischen Tweed-Anzug sitzt an einem hölzernen Schreibtisch auf dem ein iMac von 2019 steht und installiert darauf Linux." class="img-fluid figure-img"></p>
+<figcaption>Bild: Der Dachs sitzt am Schreibtisch und installiert Linux / Nano Banana</figcaption>
+</figure>
 </div>
-<div class="delink listing-description"><a href="./posts/linux-auf-einem-imac-installieren/index.html" class="no-external">
-<p>Wie man auf einem iMac von 2019 macOS durch Linux Mint ersetzt, und damit wieder richtig flott macht.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/linux-auf-einem-imac-installieren/index.html" class="no-external">
-<div class="listing-date">
-23.07.2026
-</div>
-<div class="listing-author">
-Frank Mazny
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="cXVhcnRvJTJDc29mdHdhcmUlMkNtYXJrZG93bg==" data-listing-date-sort="1784412000000" data-listing-file-modified-sort="1784552210902" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="180">
-<div class="thumbnail"><a href="./posts/es-ist-vollbracht/index.html" class="no-external">
+<p>Mein <a href="https://support.apple.com/de-de/111963">iMac</a> von 2019 ist mit 3,0 GHz 6‑Core Intel Core i5 und 8 GB RAM zwar nicht mehr auf dem aktuellen Stand, aber für meine Anforderungen immer noch ein brauchbarer Computer. Wäre da nicht das immer langsamere MacOS, das zum Teil auf das eingebaute <a href="https://de.wikipedia.org/wiki/Fusion_Drive">Fusion Drive</a> zurückzuführen ist. Ich habe alle von mir im Internet auffindbaren Lösungsversuche ausprobiert, eine merkbare Verbesserung hat aber alles nicht bewirkt. MacOS wurde so langsam, dass arbeiten mit dem Gerät zur Geduldsprobe wurde. Zudem fühlte ich mich an meinem eigenen Computer nicht mehr zu Hause, weil mich macOS durch seine restriktiven Maßnahmen oft nervt. Also musste eine Lösung her, und die hieß Linux.</p>
+<p>Auf Macs mit Intel-Chip ist die Installation von Linux in der Regel recht simpel. Die Ausnahme von der Regel sind allerdings Macs mit <a href="https://de.wikipedia.org/wiki/Apple_T2">T2-Chip</a>. Für Geräte, die diesen Sicherheitschip eingebaut haben, gibt es angepasste <a href="https://wiki.t2linux.org/">Linux-Distributionen</a>. Ob dein Mac den T2-Chip eingebaut hat, kannst du auf <a href="https://support.apple.com/de-de/103265">dieser Seite</a> nachsehen. <a href="https://de.ifixit.com/Anleitung/Wie+Linux+auf+einem+T2+Mac+installiert+wird/198407">Hier</a> findest du eine Anleitung für Macs mit T2-Chip.</p>
+<section id="vorbereitung" class="level2">
+<h2 class="anchored" data-anchor-id="vorbereitung">Vorbereitung</h2>
+<ul>
+<li><p><strong>Obacht</strong>: Bevor man wilde Sachen auf seinem Computer anstellt, sollte man immer alle wichtigen Daten sichern!</p></li>
+<li><p>Wir brauchen <a href="https://etcher.balena.io/">Balena Etcher</a>, ein Programm mit dem bootfähige USB-Sticks erstellt werden können.</p></li>
+<li><p>Ein Linux herunterladen. Ich habe mich für <a href="https://www.linuxmint.com/">Linux Mint Cinnamon Edition</a> entschieden, weil es eine breite Hardware-Unterstützung bietet.</p></li>
+<li><p>Du brauchst einen USB-Stick mit mindestens 4 GB Speicherplatz.</p></li>
+</ul>
+</section>
+<section id="partitionieren" class="level2">
+<h2 class="anchored" data-anchor-id="partitionieren">Partitionieren</h2>
+<p>Für eine Dual-Boot-Installation müssen wir die Partition von macOS verkleinern, um Platz für Linux zu schaffen. Dazu öffnest du das Festplattendienstprogramm: Programme → Dienstprogramme → Festplattendienstprogramm.</p>
+<ul>
+<li><p>Wähle deine interne Festplatte (die oberste Ebene, nicht das APFS‑Volume).</p></li>
+<li><p>Klicke auf Partitionieren.</p></li>
+<li><p>Verkleinere die macOS‑Partition um mindestens 30–60 GB.</p></li>
+<li><p>Erstelle keine neue Partition – lasse den Bereich einfach unformatiert.</p></li>
+</ul>
+</section>
+<section id="usb-stick-erstellen" class="level2">
+<h2 class="anchored" data-anchor-id="usb-stick-erstellen">USB-Stick erstellen</h2>
+<ul>
+<li><p>Starte Balena Etcher.</p></li>
+<li><p>Klicke auf “Flash from file”, und wähle die Linux‑ISO-Datei aus.</p></li>
+<li><p>Wähle deinen USB‑Stick.</p></li>
+<li><p>Klicke “Flash” und jetzt wird Linux Mint auf den Stick gepackt.</p></li>
+</ul>
+</section>
+<section id="linux-installieren" class="level2">
+<h2 class="anchored" data-anchor-id="linux-installieren">Linux installieren</h2>
+<ul>
+<li><p>Stecke den USB-Stick ein.</p></li>
+<li><p>Halte beim Starten die Option (⌥)‑Taste gedrückt.</p></li>
+<li><p>Wähle im Boot-Menü die Option EFI-Boot.</p></li>
+<li><p>Wähle “Start Linux Mint”. Jetzt wird die Live-CD gestartet. Du kannst alles ausprobieren, ohne dass Änderungen am Rechner vorgenommen werden.</p></li>
+<li><p>Klicke auf “Install Linux Mint” auf dem Desktop. Jetzt kannst du die Sprache der Installation einstellen und dich mit dem Internet verbinden.Auch die Multimedia-Treiber solltest du installieren.</p></li>
+<li><p>Im nächsten Punkt der Installation wird erkannt, dass schon ein Betriebssystem auf dem Gerät existiert und Mint wird sich dazu installieren. Willst du macOS löschen und nur Linux Mint installieren, klicke auf “Festplatte löschen”.</p></li>
+<li><p>Im weiteren Verlauf wird Linux Mint installiert und mit Updates versorgt. Danach kannst du den USB-Stick entfernen und den iMac neu starten. Du solltest nun ein Bootmenü sehen, indem du zwischen macOS und Linux auswählen kannst.</p></li>
+</ul>
+<p>Schon fertig! Was ich partout nicht ans Laufen bekommen habe, sind die eingebaute WIFI-Karte und Audio. Ersteres ist nicht schlimm, da ich sowieso am Kabel hänge und Audio funktioniert seltsamerweise über einen per Bluetooth gekoppelten Lautsprecher. Damit kann ich leben. Ansonsten läuft Linux Mint auf dem iMac ziemlich flott und die iCloud ist zumindest über den Browser auch benutzbar. Insgesamt bin ich sehr zufrieden. <a href="https://linuxsimply.com/linux-basics/os-installation/dual-boot/linux-mint-on-mac/">Hier</a> findest du noch eine sehr ausführliche und bebilderte Anleitung zur Installation.</p>
+<p>Hinweis: <em>Alle Angaben ohne Gewähr. Ich bin nicht schuld, wenn dein Computer explodiert.</em></p>
 
-<img loading="lazy" src="./posts/es-ist-vollbracht/typvorpc.jpeg" class="thumbnail-image">
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/es-ist-vollbracht/index.html" class="no-external">Es ist vollbracht!</a>
-</h3>
-<div class="listing-categories">
+</section>
 
-<div class="listing-category" onclick="window.quartoListingCategory('cXVhcnRv'); return false;">quarto</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('c29mdHdhcmU='); return false;">software</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('bWFya2Rvd24='); return false;">markdown</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/es-ist-vollbracht/index.html" class="no-external">
-<p>Wie ich sehr lange nichts mehr in Blogs schreiben wollte, aber dann doch wieder Lust dazu bekam.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/es-ist-vollbracht/index.html" class="no-external">
-<div class="listing-date">
-19.07.2026
-</div>
-<div class="listing-author">
-Frank Mazny
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">Keine Treffer</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -663,6 +655,35 @@ Frank Mazny
     }
   });
   </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "73kb/73kb.github.io";
+    script.dataset.repoId = "R_kgDOTOd4Cw";
+    script.dataset.category = "General";
+    script.dataset.categoryId = "DIC_kwDOTOd4C84DAxKs";
+    script.dataset.mapping = "title";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

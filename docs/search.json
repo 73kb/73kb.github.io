@@ -7,6 +7,13 @@
     "text": "Dieses Weblog wird mit Quarto betrieben, einer quelloffenen Anwendung, die statische Seiten erzeugt. Es werden keine Cookies gesetzt, und ebenso werden keinerlei Daten erhoben, um die Aktivitäten der Besucher:innen nachzuverfolgen.\nAls Werkzeug zur Analyse der Seitenaufrufe wird die ebenfalls quelloffene Software Goatcounter verwendet, die keine Cookies setzt und nach eigener Aussage nicht einmal eine Datenschutzerklärung benötigt. Wer es genauer wissen möchte, kann einsehen, welche Daten Goatcounter erhebt und speichert, und die hauseigene Datenschutzerklärung lesen.\nFür die Kommentarfunktion wird die quelloffene Software Giscus verwendet. Um einen Kommentar zu hinterlassen, ist eine Registrierung bei GitHub erforderlich; die Kommentare werden in den Diskussionen des Repositorys dieser Website gespeichert. Einsehbar sind für mich lediglich der Kommentar selbst sowie der Benutzername. Auf Wunsch kann ich einen Kommentar auch löschen. Wie GitHub jedoch mit den im Rahmen der Registrierung gespeicherten Daten verfährt, entzieht sich meiner Einflussnahme.\nFalls du weitere Fragen hast, kannst du mir gerne eine E-Mail an vorname.name@gmail.com schreiben.\nBild: Nano Banana"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "73KB",
+    "section": "",
+    "text": "Linux auf einem iMac installieren\n\n\n\nLinux\n\niMac\n\nAnleitung\n\n\n\nWie man auf einem iMac von 2019 macOS durch Linux Mint ersetzt, und damit wieder richtig flott macht.\n\n\n\n\n\n23.07.2026\n\n\nFrank Mazny\n\n\n\n\n\n\n\n\n\n\n\n\nEs ist vollbracht!\n\n\n\nquarto\n\nsoftware\n\nmarkdown\n\n\n\nWie ich sehr lange nichts mehr in Blogs schreiben wollte, aber dann doch wieder Lust dazu bekam.\n\n\n\n\n\n19.07.2026\n\n\nFrank Mazny\n\n\n\n\n\nKeine Treffer"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Autor",
@@ -14,11 +21,39 @@
     "text": "Mein Name ist Frank Mazny, ich wurde 1973 geboren und lebe in einer eher ruralen Ecke des Ruhrgebiets. Von Beruf bin ich Krankenpfleger und arbeite in einer niedrigschwelligen Einrichtung der Suchthilfe. In meiner Freizeit beschäftige ich mich vorzugsweise mit Büchern, Musik, Klemmbausteinen und allerlei digitalen Bastelkram.\nDer Name 73KB ist eine kleine Hommage an meine Wurzeln, als Computer noch mit 8-Bit-Prozessoren arbeiteten, 64KB RAM für Anwendungen ausreichten, und man die beigelegte Software in Computer-Magazinen noch selbst abtippen musste. Dieses Weblog soll mir in erster Linie als persönliches Nachschlagewerk, Notizbuch und digitaler Sammelordner dienen.\nAlle Inhalte stehen, falls nicht anderweitig angegeben, unter einer CC BY-NC-SA 4.0.-Lizenz.\nE-Mails können gerne an vorname.nachname@gmail.com geschickt werden.\nBild: Nano Banana"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "73KB",
+    "objectID": "posts/linux-auf-einem-imac-installieren/index.html",
+    "href": "posts/linux-auf-einem-imac-installieren/index.html",
+    "title": "Linux auf einem iMac installieren",
     "section": "",
-    "text": "Es ist vollbracht!\n\n\n\nquarto\n\nsoftware\n\nmarkdown\n\n\n\nWie ich sehr lange nichts mehr in Blogs schreiben wollte, aber dann doch wieder Lust dazu bekam.\n\n\n\n\n\n19.07.2026\n\n\nFrank Mazny\n\n\n\n\n\nKeine Treffer"
+    "text": "Bild: Der Dachs sitzt am Schreibtisch und installiert Linux / Nano Banana\nMein iMac von 2019 ist mit 3,0 GHz 6‑Core Intel Core i5 und 8 GB RAM zwar nicht mehr auf dem aktuellen Stand, aber für meine Anforderungen immer noch ein brauchbarer Computer. Wäre da nicht das immer langsamere MacOS, das zum Teil auf das eingebaute Fusion Drive zurückzuführen ist. Ich habe alle von mir im Internet auffindbaren Lösungsversuche ausprobiert, eine merkbare Verbesserung hat aber alles nicht bewirkt. MacOS wurde so langsam, dass arbeiten mit dem Gerät zur Geduldsprobe wurde. Zudem fühlte ich mich an meinem eigenen Computer nicht mehr zu Hause, weil mich macOS durch seine restriktiven Maßnahmen oft nervt. Also musste eine Lösung her, und die hieß Linux.\nAuf Macs mit Intel-Chip ist die Installation von Linux in der Regel recht simpel. Die Ausnahme von der Regel sind allerdings Macs mit T2-Chip. Für Geräte, die diesen Sicherheitschip eingebaut haben, gibt es angepasste Linux-Distributionen. Ob dein Mac den T2-Chip eingebaut hat, kannst du auf dieser Seite nachsehen. Hier findest du eine Anleitung für Macs mit T2-Chip."
+  },
+  {
+    "objectID": "posts/linux-auf-einem-imac-installieren/index.html#vorbereitung",
+    "href": "posts/linux-auf-einem-imac-installieren/index.html#vorbereitung",
+    "title": "Linux auf einem iMac installieren",
+    "section": "Vorbereitung",
+    "text": "Vorbereitung\n\nObacht: Bevor man wilde Sachen auf seinem Computer anstellt, sollte man immer alle wichtigen Daten sichern!\nWir brauchen Balena Etcher, ein Programm mit dem bootfähige USB-Sticks erstellt werden können.\nEin Linux herunterladen. Ich habe mich für Linux Mint Cinnamon Edition entschieden, weil es eine breite Hardware-Unterstützung bietet.\nDu brauchst einen USB-Stick mit mindestens 4 GB Speicherplatz."
+  },
+  {
+    "objectID": "posts/linux-auf-einem-imac-installieren/index.html#partitionieren",
+    "href": "posts/linux-auf-einem-imac-installieren/index.html#partitionieren",
+    "title": "Linux auf einem iMac installieren",
+    "section": "Partitionieren",
+    "text": "Partitionieren\nFür eine Dual-Boot-Installation müssen wir die Partition von macOS verkleinern, um Platz für Linux zu schaffen. Dazu öffnest du das Festplattendienstprogramm: Programme → Dienstprogramme → Festplattendienstprogramm.\n\nWähle deine interne Festplatte (die oberste Ebene, nicht das APFS‑Volume).\nKlicke auf Partitionieren.\nVerkleinere die macOS‑Partition um mindestens 30–60 GB.\nErstelle keine neue Partition – lasse den Bereich einfach unformatiert."
+  },
+  {
+    "objectID": "posts/linux-auf-einem-imac-installieren/index.html#usb-stick-erstellen",
+    "href": "posts/linux-auf-einem-imac-installieren/index.html#usb-stick-erstellen",
+    "title": "Linux auf einem iMac installieren",
+    "section": "USB-Stick erstellen",
+    "text": "USB-Stick erstellen\n\nStarte Balena Etcher.\nKlicke auf “Flash from file”, und wähle die Linux‑ISO-Datei aus.\nWähle deinen USB‑Stick.\nKlicke “Flash” und jetzt wird Linux Mint auf den Stick gepackt."
+  },
+  {
+    "objectID": "posts/linux-auf-einem-imac-installieren/index.html#linux-installieren",
+    "href": "posts/linux-auf-einem-imac-installieren/index.html#linux-installieren",
+    "title": "Linux auf einem iMac installieren",
+    "section": "Linux installieren",
+    "text": "Linux installieren\n\nStecke den USB-Stick ein.\nHalte beim Starten die Option (⌥)‑Taste gedrückt.\nWähle im Boot-Menü die Option EFI-Boot.\nWähle “Start Linux Mint”. Jetzt wird die Live-CD gestartet. Du kannst alles ausprobieren, ohne dass Änderungen am Rechner vorgenommen werden.\nKlicke auf “Install Linux Mint” auf dem Desktop. Jetzt kannst du die Sprache der Installation einstellen und dich mit dem Internet verbinden.Auch die Multimedia-Treiber solltest du installieren.\nIm nächsten Punkt der Installation wird erkannt, dass schon ein Betriebssystem auf dem Gerät existiert und Mint wird sich dazu installieren. Willst du macOS löschen und nur Linux Mint installieren, klicke auf “Festplatte löschen”.\nIm weiteren Verlauf wird Linux Mint installiert und mit Updates versorgt. Danach kannst du den USB-Stick entfernen und den iMac neu starten. Du solltest nun ein Bootmenü sehen, indem du zwischen macOS und Linux auswählen kannst.\n\nSchon fertig! Was ich partout nicht ans Laufen bekommen habe, sind die eingebaute WIFI-Karte und Audio. Ersteres ist nicht schlimm, da ich sowieso am Kabel hänge und Audio funktioniert seltsamerweise über einen per Bluetooth gekoppelten Lautsprecher. Damit kann ich leben. Ansonsten läuft Linux Mint auf dem iMac ziemlich flott und die iCloud ist zumindest über den Browser auch benutzbar. Insgesamt bin ich sehr zufrieden. Hier findest du noch eine sehr ausführliche und bebilderte Anleitung zur Installation.\nHinweis: Alle Angaben ohne Gewähr. Ich bin nicht schuld, wenn dein Computer explodiert."
   },
   {
     "objectID": "posts/es-ist-vollbracht/index.html",

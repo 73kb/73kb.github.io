@@ -5,6 +5,7 @@
 ## Pages
 
 - [Datenschutz](https://73kb.github.io/datenschutz.llms.md)
-- [Autor](https://73kb.github.io/about.llms.md)
 - [index](https://73kb.github.io/index.llms.md)
+- [Autor](https://73kb.github.io/about.llms.md)
+- [Linux auf einem iMac installieren](https://73kb.github.io/posts/linux-auf-einem-imac-installieren/index.llms.md)
 - [Es ist vollbracht!](https://73kb.github.io/posts/es-ist-vollbracht/index.llms.md)
