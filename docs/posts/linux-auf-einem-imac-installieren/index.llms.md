@@ -54,6 +54,10 @@ Für eine Dual-Boot-Installation müssen wir die Partition von macOS verkleinern
 
 - Im weiteren Verlauf wird Linux Mint installiert und mit Updates versorgt. Danach kannst du den USB-Stick entfernen und den iMac neu starten. Du solltest nun ein Bootmenü sehen, indem du zwischen macOS und Linux auswählen kannst.
 
+![](imac_neofetch.png "Screenshot: Befehl neofetch im Terminal")
+
+Screenshot: Befehl neofetch im Terminal
+
 Schon fertig! Was ich partout nicht ans Laufen bekommen habe, sind die eingebaute WIFI-Karte und Audio. Ersteres ist nicht schlimm, da ich sowieso am Kabel hänge und Audio funktioniert seltsamerweise über einen per Bluetooth gekoppelten Lautsprecher. Damit kann ich leben. Ansonsten läuft Linux Mint auf dem iMac ziemlich flott und die iCloud ist zumindest über den Browser auch benutzbar. Insgesamt bin ich sehr zufrieden. [Hier](https://linuxsimply.com/linux-basics/os-installation/dual-boot/linux-mint-on-mac/) findest du noch eine sehr ausführliche und bebilderte Anleitung zur Installation.
 
 Hinweis: *Alle Angaben ohne Gewähr. Ich bin nicht schuld, wenn dein Computer explodiert.*
