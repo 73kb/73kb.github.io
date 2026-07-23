@@ -1,4 +1,4 @@
-[![](./posts/linux-auf-einem-imac-installieren/dachs_am_schreibtisch.png)](posts/linux-auf-einem-imac-installieren/index.llms.md)
+[![](./posts/linux-auf-einem-imac-installieren/dachs_am_schreibtisch.webp)](posts/linux-auf-einem-imac-installieren/index.llms.md)
 
 ### [Linux auf einem iMac installieren](posts/linux-auf-einem-imac-installieren/index.llms.md)
 

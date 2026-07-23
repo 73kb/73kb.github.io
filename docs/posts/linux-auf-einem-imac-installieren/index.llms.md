@@ -1,4 +1,4 @@
-![](dachs_am_schreibtisch.png "Zeichnung: Ein Dachs in einem altmodischen Tweed-Anzug sitzt an einem hölzernen Schreibtisch auf dem ein iMac von 2019 steht und installiert darauf Linux.")
+![](dachs_am_schreibtisch.webp "Zeichnung: Ein Dachs in einem altmodischen Tweed-Anzug sitzt an einem hölzernen Schreibtisch auf dem ein iMac von 2019 steht und installiert darauf Linux.")
 
 Bild: Der Dachs sitzt am Schreibtisch und installiert Linux / Nano Banana
 
@@ -54,7 +54,7 @@ Für eine Dual-Boot-Installation müssen wir die Partition von macOS verkleinern
 
 - Im weiteren Verlauf wird Linux Mint installiert und mit Updates versorgt. Danach kannst du den USB-Stick entfernen und den iMac neu starten. Du solltest nun ein Bootmenü sehen, indem du zwischen macOS und Linux auswählen kannst.
 
-![](imac_neofetch.png "Screenshot: Befehl neofetch im Terminal")
+![](imac_neofetch.webp "Screenshot: Befehl neofetch im Terminal")
 
 Screenshot: Befehl neofetch im Terminal
 
