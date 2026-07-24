@@ -18,7 +18,7 @@ Auf Macs mit Intel-Chip ist die Installation von Linux in der Regel recht simpel
 
 ## Partitionieren
 
-Für eine Dual-Boot-Installation müssen wir die Partition von macOS verkleinern, um Platz für Linux zu schaffen. Dazu öffnest du das Festplattendienstprogramm: Programme → Dienstprogramme → Festplattendienstprogramm.
+Für eine Dual-Boot-Installation müssen wir die Partition von macOS verkleinern, um Platz für Linux zu schaffen. Dazu benötigen wir das Festplattendienstprogramm. Du findest es unter Programme → Dienstprogramme → Festplattendienstprogramm.
 
 - Wähle deine interne Festplatte (die oberste Ebene, nicht das APFS‑Volume).
 
@@ -44,15 +44,15 @@ Für eine Dual-Boot-Installation müssen wir die Partition von macOS verkleinern
 
 - Halte beim Starten die Option (⌥)‑Taste gedrückt.
 
-- Wähle im Boot-Menü die Option EFI-Boot.
+- Wähle im Boot-Menü die Option EFI-Boot und dann zum Starten den USB-Stick aus.
 
 - Wähle “Start Linux Mint”. Jetzt wird die Live-CD gestartet. Du kannst alles ausprobieren, ohne dass Änderungen am Rechner vorgenommen werden.
 
-- Klicke auf “Install Linux Mint” auf dem Desktop. Jetzt kannst du die Sprache der Installation einstellen und dich mit dem Internet verbinden.Auch die Multimedia-Treiber solltest du installieren.
+- Klicke auf “Install Linux Mint” auf dem Desktop (CD-Icon), damit wird die Installation gestartet. Du kannst zuerst die Sprache auswählen und dich mit dem Internet verbinden. Auch die Multimedia-Treiber solltest du installieren.
 
-- Im nächsten Punkt der Installation wird erkannt, dass schon ein Betriebssystem auf dem Gerät existiert und Mint wird sich dazu installieren. Willst du macOS löschen und nur Linux Mint installieren, klicke auf “Festplatte löschen”.
+- Im nächsten Punkt der Installation wird erkannt, dass schon ein Betriebssystem auf dem Gerät existiert und Mint wird sich dazu installieren. Willst du macOS löschen und nur Linux Mint installieren, klicke auf “Festplatte löschen” (aber nur dann!).
 
-- Im weiteren Verlauf wird Linux Mint installiert und mit Updates versorgt. Danach kannst du den USB-Stick entfernen und den iMac neu starten. Du solltest nun ein Bootmenü sehen, indem du zwischen macOS und Linux auswählen kannst.
+- Im weiteren Verlauf wird Linux Mint installiert und mit Updates versorgt. Danach kannst du den USB-Stick entfernen und den Mac neu starten. Du solltest nun ein Bootmenü sehen, indem du zwischen macOS und Linux auswählen kannst.
 
 ![](imac_neofetch.webp "Screenshot: Befehl neofetch im Terminal")
 
@@ -60,4 +60,4 @@ Screenshot: Befehl neofetch im Terminal
 
 Schon fertig! Was ich partout nicht ans Laufen bekommen habe, sind die eingebaute WIFI-Karte und Audio. Ersteres ist nicht schlimm, da ich sowieso am Kabel hänge und Audio funktioniert seltsamerweise über einen per Bluetooth gekoppelten Lautsprecher. Damit kann ich leben. Ansonsten läuft Linux Mint auf dem iMac ziemlich flott und die iCloud ist zumindest über den Browser auch benutzbar. Insgesamt bin ich sehr zufrieden. [Hier](https://linuxsimply.com/linux-basics/os-installation/dual-boot/linux-mint-on-mac/) findest du noch eine sehr ausführliche und bebilderte Anleitung zur Installation.
 
-Hinweis: *Alle Angaben ohne Gewähr. Ich bin nicht schuld, wenn dein Computer explodiert.*
+**Hinweis**: *Alle Angaben ohne Gewähr. Ich bin nicht schuld, wenn dein Computer explodiert.*
