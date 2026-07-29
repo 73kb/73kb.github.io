@@ -46,6 +46,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-15918177bfdae137372244dab4947c83.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -193,7 +196,7 @@ background: #f0f3f5;
 <p>Eigentlich hatte ich vor Jahren beschlossen, nie wieder ein Blog zu betreiben, da mir die Sache irgendwann langweilig wurde. Und überhaupt hat man ja alles nur noch in diverse Social Media gepostet. Für mich haben sich die sozialen Medien aber irgendwann als Zeitverschwendung ohne Mehrwert herausgestellt. So kam es, dass ich neulich doch wieder die Idee hatte, ganz altmodisch ein Blog zu befüllen.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="typvorpc.jpeg" title="Ein Mann sitzt vor einem alten PC in einem Raum voller Bücher und Zeitschriften." class="img-fluid figure-img"></p>
+<p><a href="typvorpc.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Bild: Nano Banana"><img src="typvorpc.jpeg" title="Ein Mann sitzt vor einem alten PC in einem Raum voller Bücher und Zeitschriften." class="img-fluid figure-img" alt="Bild: Nano Banana"></a></p>
 <figcaption>Bild: Nano Banana</figcaption>
 </figure>
 </div>
@@ -646,6 +649,38 @@ background: #f0f3f5;
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

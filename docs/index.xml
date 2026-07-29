@@ -10,7 +10,38 @@
 <atom:link href="https://73kb.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Früher waren Computer noch aus Holz</description>
 <generator>quarto-1.9.38</generator>
-<lastBuildDate>Wed, 22 Jul 2026 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 28 Jul 2026 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Lord of the Rings: Game One</title>
+  <dc:creator>Frank Mazny</dc:creator>
+  <link>https://73kb.github.io/posts/fellowship-of-the-ring/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="screenshot_fellowship_of_the_ring_1986.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Bild: Screenshot “Lord of the Rings: Game One”, 1986"><img src="https://73kb.github.io/posts/fellowship-of-the-ring/screenshot_fellowship_of_the_ring_1986.webp" class="img-fluid figure-img" alt="Bild: Screenshot &quot;Fellowship of the ring&quot; 1986"></a></p>
+<figcaption>Bild: Screenshot “Lord of the Rings: Game One”, 1986</figcaption>
+</figure>
+</div>
+<p>Heute vor 72 Jahren erschien Band eins von J. R. R. Tolkiens <em>The Lord of the Rings</em> auf dem britischen Buchmarkt. Unter dem Titel <em>The Fellowship of the Ring</em> begann damit eine Geschichte, die das Fantasy-Genre für immer prägen sollte. Auch wenn heutzutage vielen Menschen gar nicht bewusst ist, dass die Filme und Spiele tatsächlich eine Buchvorlage haben.</p>
+<p><em>Lord of the Rings: Game One</em> – in Nordamerika unter dem Titel <em>The Fellowship of the Ring: A Software Adventure</em> veröffentlicht gehört zu den frühen Versuchen, die Welt von Tolkien auf den Computer zu portieren. Es wurde vom australischen Entwicklerstudio Beam Software entwickelt und erschien zwischen 1985 und 1986 für Plattformen wie den ZX Spectrum, den Commodore 64, den Amstrad CPC und weitere Systeme. Es war der offiziell lizenzierte Nachfolger des 1982 sehr erfolgreich produzierten <em>The Hobbit</em>, das seinerzeit ein großer Erfolg war. Genau wie sein Vorgänger war auch dieses Spiel ein illustriertes Text-Adventure, in dem man kurze Befehle wie “<em>GO NORTH</em>”, “<em>TAKE SWORD</em>”, “<em>TALK TO GANDALF”</em> eingibt – und als Antwort beschreibende Textpassagen erhält. Manchmal auch nur die Anwort, dass der Befehl nicht verstanden worden ist. Ich glaube, das Spiel versteht um die 400 Wörter, zuviel darf man also nicht erwarten. Dafür ist das Spielsystem recht innovativ: Man kann nicht nur Frodo steuern, sondern auch die Perspektive wechseln, und das Spiel aus der Sicht von Sam, Merry oder Pippin spielen. Das ist für Spiel von 1986 schon bemerkenswert.</p>
+<p><em>Game One</em> deckte nicht die gesamte Trilogie ab, sondern konzentriert sich auf den ersten Band. Der Spielverlauf führt vom Auenland über die Flucht vor den Schwarzen Reitern bis hin zu den Minen von Moria und der Begegnung mit dem Balrog, letztlich bis zur Ankunft bei Galadriel in Lórien. Dabei bleibt das Spiel immer nah an der Buchvorlage, nimmt sich aber auch gewisse Freiheiten, die ein Spiel interessant machen. Als besonderes Gimmick wurde das Spiel mit einer Taschenbuchausgabe des Buches verkauft. O, glückliche Zeiten, als Computerspiele noch physisch in einer Verpackung verkauft wurden!</p>
+<p>Im <a href="https://archive.org/details/msdos_Fellowship_of_the_Ring_The_-_Part_1_1986">Internet Archiv</a> kann man die DOS-Version online spielen, eine <a href="https://ifdb.org/viewgame?id=tpagbmkmud7cl3uz">Anleitung</a> gibt es auch. Im <a href="https://www.tolkienshop.com/contents/en-uk/p6224.html">Tolkien-Shop</a> gibt es sogar noch Originale des Spiels, wahrscheinlich für den ZX Spectrum, zu kaufen.</p>
+
+
+
+ ]]></description>
+  <category>Software</category>
+  <category>Adventure</category>
+  <category>Buch</category>
+  <guid>https://73kb.github.io/posts/fellowship-of-the-ring/</guid>
+  <pubDate>Tue, 28 Jul 2026 22:00:00 GMT</pubDate>
+  <media:content url="https://73kb.github.io/posts/fellowship-of-the-ring/screenshot_fellowship_of_the_ring_1986.webp" medium="image" type="image/webp"/>
+</item>
 <item>
   <title>Linux auf einem iMac installieren</title>
   <dc:creator>Frank Mazny</dc:creator>
@@ -23,7 +54,7 @@
 
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://73kb.github.io/posts/linux-auf-einem-imac-installieren/dachs_am_schreibtisch.webp" title="Zeichnung: Ein Dachs in einem altmodischen Tweed-Anzug sitzt an einem hölzernen Schreibtisch auf dem ein iMac von 2019 steht und installiert darauf Linux." class="img-fluid figure-img"></p>
+<p><a href="dachs_am_schreibtisch.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Bild: Der Dachs sitzt am Schreibtisch und installiert Linux / Nano Banana"><img src="https://73kb.github.io/posts/linux-auf-einem-imac-installieren/dachs_am_schreibtisch.webp" title="Zeichnung: Ein Dachs in einem altmodischen Tweed-Anzug sitzt an einem hölzernen Schreibtisch auf dem ein iMac von 2019 steht und installiert darauf Linux." class="img-fluid figure-img" alt="Bild: Der Dachs sitzt am Schreibtisch und installiert Linux / Nano Banana"></a></p>
 <figcaption>Bild: Der Dachs sitzt am Schreibtisch und installiert Linux / Nano Banana</figcaption>
 </figure>
 </div>
@@ -70,7 +101,7 @@
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://73kb.github.io/posts/linux-auf-einem-imac-installieren/imac_neofetch.webp" title="Screenshot: Befehl neofetch im Terminal" class="img-fluid figure-img"></p>
+<p><a href="imac_neofetch.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Screenshot: Befehl neofetch im Terminal"><img src="https://73kb.github.io/posts/linux-auf-einem-imac-installieren/imac_neofetch.webp" title="Screenshot: Befehl neofetch im Terminal" class="img-fluid figure-img" alt="Screenshot: Befehl neofetch im Terminal"></a></p>
 <figcaption>Screenshot: Befehl neofetch im Terminal</figcaption>
 </figure>
 </div>
@@ -101,7 +132,7 @@
 <p>Eigentlich hatte ich vor Jahren beschlossen, nie wieder ein Blog zu betreiben, da mir die Sache irgendwann langweilig wurde. Und überhaupt hat man ja alles nur noch in diverse Social Media gepostet. Für mich haben sich die sozialen Medien aber irgendwann als Zeitverschwendung ohne Mehrwert herausgestellt. So kam es, dass ich neulich doch wieder die Idee hatte, ganz altmodisch ein Blog zu befüllen.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://73kb.github.io/posts/es-ist-vollbracht/typvorpc.jpeg" title="Ein Mann sitzt vor einem alten PC in einem Raum voller Bücher und Zeitschriften." class="img-fluid figure-img"></p>
+<p><a href="typvorpc.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Bild: Nano Banana"><img src="https://73kb.github.io/posts/es-ist-vollbracht/typvorpc.jpeg" title="Ein Mann sitzt vor einem alten PC in einem Raum voller Bücher und Zeitschriften." class="img-fluid figure-img" alt="Bild: Nano Banana"></a></p>
 <figcaption>Bild: Nano Banana</figcaption>
 </figure>
 </div>

@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/fellowship-of-the-ring/index.html",
       "/posts/linux-auf-einem-imac-installieren/index.html",
       "/posts/es-ist-vollbracht/index.html"
     ]

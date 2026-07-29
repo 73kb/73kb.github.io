@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Frank Mazny">
-<meta name="keywords" content="Linux, iMac, Anleitung">
-<meta name="description" content="Wie man auf einem iMac von 2019 macOS durch Linux Mint ersetzt, und damit wieder richtig flott macht.">
+<meta name="keywords" content="Software, Adventure, Lord of the Rings Game One">
+<meta name="description" content="Vor 72 Jahren erschien Fellowship of the Ring. Mit einem 41 Jahre alten Spiel kann man selbst durch Mittelerde reisen.">
 
-<title>Linux auf einem iMac installieren – 73KB</title>
+<title>Lord of the Rings: Game One – 73KB</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -99,7 +99,7 @@ background: #f0f3f5;
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -140,16 +140,16 @@ background: #f0f3f5;
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Linux auf einem iMac installieren</h1>
+      <h1 class="title">Lord of the Rings: Game One</h1>
                   <div>
         <div class="description">
-          Wie man auf einem iMac von 2019 macOS durch Linux Mint ersetzt, und damit wieder richtig flott macht.
+          Vor 72 Jahren erschien Fellowship of the Ring. Mit einem 41 Jahre alten Spiel kann man selbst durch Mittelerde reisen.
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">Linux</div>
-                <div class="quarto-category">iMac</div>
-                <div class="quarto-category">Anleitung</div>
+                <div class="quarto-category">Software</div>
+                <div class="quarto-category">Adventure</div>
+                <div class="quarto-category">Buch</div>
               </div>
                   </div>
   </div>
@@ -167,7 +167,7 @@ background: #f0f3f5;
       <div>
       <div class="quarto-title-meta-heading">Veröffentlichungsdatum</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">23. Juli 2026</p>
+        <p class="date">29. Juli 2026</p>
       </div>
     </div>
     
@@ -178,25 +178,14 @@ background: #f0f3f5;
   <div>
     <div class="keywords">
       <div class="block-title">Schlüsselwörter</div>
-      <p>Linux, iMac, Anleitung</p>
+      <p>Software, Adventure, Lord of the Rings Game One</p>
     </div>
   </div>
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Auf dieser Seite</h2>
-   
-  <ul>
-  <li><a href="#vorbereitung" id="toc-vorbereitung" class="nav-link active" data-scroll-target="#vorbereitung">Vorbereitung</a></li>
-  <li><a href="#partitionieren" id="toc-partitionieren" class="nav-link" data-scroll-target="#partitionieren">Partitionieren</a></li>
-  <li><a href="#usb-stick-erstellen" id="toc-usb-stick-erstellen" class="nav-link" data-scroll-target="#usb-stick-erstellen">USB-Stick erstellen</a></li>
-  <li><a href="#linux-installieren" id="toc-linux-installieren" class="nav-link" data-scroll-target="#linux-installieren">Linux installieren</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -206,62 +195,16 @@ background: #f0f3f5;
 
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="dachs_am_schreibtisch.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Bild: Der Dachs sitzt am Schreibtisch und installiert Linux / Nano Banana"><img src="dachs_am_schreibtisch.webp" title="Zeichnung: Ein Dachs in einem altmodischen Tweed-Anzug sitzt an einem hölzernen Schreibtisch auf dem ein iMac von 2019 steht und installiert darauf Linux." class="img-fluid figure-img" alt="Bild: Der Dachs sitzt am Schreibtisch und installiert Linux / Nano Banana"></a></p>
-<figcaption>Bild: Der Dachs sitzt am Schreibtisch und installiert Linux / Nano Banana</figcaption>
+<p><a href="screenshot_fellowship_of_the_ring_1986.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Bild: Screenshot “Lord of the Rings: Game One”, 1986"><img src="screenshot_fellowship_of_the_ring_1986.webp" class="img-fluid figure-img" alt="Bild: Screenshot &quot;Fellowship of the ring&quot; 1986"></a></p>
+<figcaption>Bild: Screenshot “Lord of the Rings: Game One”, 1986</figcaption>
 </figure>
 </div>
-<p>Mein <a href="https://support.apple.com/de-de/111963">iMac</a> von 2019 ist mit 3,0 GHz 6‑Core Intel Core i5 und 8 GB RAM zwar nicht mehr auf dem aktuellen Stand, aber für meine Anforderungen immer noch ein brauchbarer Computer. Wäre da nicht das immer langsamere MacOS, das zum Teil auf das eingebaute <a href="https://de.wikipedia.org/wiki/Fusion_Drive">Fusion Drive</a> zurückzuführen ist. Ich habe alle von mir im Internet auffindbaren Lösungsversuche ausprobiert, eine merkbare Verbesserung hat aber alles nicht bewirkt. MacOS wurde so langsam, dass arbeiten mit dem Gerät zur Geduldsprobe wurde. Zudem fühlte ich mich an meinem eigenen Computer nicht mehr zu Hause, weil mich macOS durch seine restriktiven Maßnahmen oft nervt. Also musste eine Lösung her, und die hieß Linux.</p>
-<p>Auf Macs mit Intel-Chip ist die Installation von Linux in der Regel recht simpel. Die Ausnahme von der Regel sind allerdings Macs mit <a href="https://de.wikipedia.org/wiki/Apple_T2">T2-Chip</a>. Für Geräte, die diesen Sicherheitschip eingebaut haben, gibt es angepasste <a href="https://wiki.t2linux.org/">Linux-Distributionen</a>. Ob dein Mac den T2-Chip eingebaut hat, kannst du auf <a href="https://support.apple.com/de-de/103265">dieser Seite</a> nachsehen. <a href="https://de.ifixit.com/Anleitung/Wie+Linux+auf+einem+T2+Mac+installiert+wird/198407">Hier</a> findest du eine Anleitung für Macs mit T2-Chip.</p>
-<section id="vorbereitung" class="level2">
-<h2 class="anchored" data-anchor-id="vorbereitung">Vorbereitung</h2>
-<ul>
-<li><p><strong>Obacht</strong>: Bevor man wilde Sachen auf seinem Computer anstellt, sollte man immer alle wichtigen Daten sichern!</p></li>
-<li><p>Wir brauchen <a href="https://etcher.balena.io/">Balena Etcher</a>, ein Programm mit dem bootfähige USB-Sticks erstellt werden können.</p></li>
-<li><p>Ein Linux herunterladen. Ich habe mich für <a href="https://www.linuxmint.com/">Linux Mint Cinnamon Edition</a> entschieden, weil es eine breite Hardware-Unterstützung bietet.</p></li>
-<li><p>Du brauchst einen USB-Stick mit mindestens 4 GB Speicherplatz.</p></li>
-</ul>
-</section>
-<section id="partitionieren" class="level2">
-<h2 class="anchored" data-anchor-id="partitionieren">Partitionieren</h2>
-<p>Für eine Dual-Boot-Installation müssen wir die Partition von macOS verkleinern, um Platz für Linux zu schaffen. Dazu benötigen wir das Festplattendienstprogramm. Du findest es unter Programme → Dienstprogramme → Festplattendienstprogramm.</p>
-<ul>
-<li><p>Wähle deine interne Festplatte (die oberste Ebene, nicht das APFS‑Volume).</p></li>
-<li><p>Klicke auf Partitionieren.</p></li>
-<li><p>Verkleinere die macOS‑Partition um mindestens 30–60 GB.</p></li>
-<li><p>Erstelle keine neue Partition – lasse den Bereich einfach unformatiert.</p></li>
-</ul>
-</section>
-<section id="usb-stick-erstellen" class="level2">
-<h2 class="anchored" data-anchor-id="usb-stick-erstellen">USB-Stick erstellen</h2>
-<ul>
-<li><p>Starte Balena Etcher.</p></li>
-<li><p>Klicke auf “Flash from file”, und wähle die Linux‑ISO-Datei aus.</p></li>
-<li><p>Wähle deinen USB‑Stick.</p></li>
-<li><p>Klicke “Flash” und jetzt wird Linux Mint auf den Stick gepackt.</p></li>
-</ul>
-</section>
-<section id="linux-installieren" class="level2">
-<h2 class="anchored" data-anchor-id="linux-installieren">Linux installieren</h2>
-<ul>
-<li><p>Stecke den USB-Stick ein.</p></li>
-<li><p>Halte beim Starten die Option (⌥)‑Taste gedrückt.</p></li>
-<li><p>Wähle im Boot-Menü die Option EFI-Boot und dann zum Starten den USB-Stick aus.</p></li>
-<li><p>Wähle “Start Linux Mint”. Jetzt wird die Live-CD gestartet. Du kannst alles ausprobieren, ohne dass Änderungen am Rechner vorgenommen werden.</p></li>
-<li><p>Klicke auf “Install Linux Mint” auf dem Desktop (CD-Icon), damit wird die Installation gestartet. Du kannst zuerst die Sprache auswählen und dich mit dem Internet verbinden. Auch die Multimedia-Treiber solltest du installieren.</p></li>
-<li><p>Im nächsten Punkt der Installation wird erkannt, dass schon ein Betriebssystem auf dem Gerät existiert und Mint wird sich dazu installieren. Willst du macOS löschen und nur Linux Mint installieren, klicke auf “Festplatte löschen” (aber nur dann!).</p></li>
-<li><p>Im weiteren Verlauf wird Linux Mint installiert und mit Updates versorgt. Danach kannst du den USB-Stick entfernen und den Mac neu starten. Du solltest nun ein Bootmenü sehen, indem du zwischen macOS und Linux auswählen kannst.</p></li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="imac_neofetch.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Screenshot: Befehl neofetch im Terminal"><img src="imac_neofetch.webp" title="Screenshot: Befehl neofetch im Terminal" class="img-fluid figure-img" alt="Screenshot: Befehl neofetch im Terminal"></a></p>
-<figcaption>Screenshot: Befehl neofetch im Terminal</figcaption>
-</figure>
-</div>
-<p>Schon fertig! Was ich partout nicht ans Laufen bekommen habe, sind die eingebaute WIFI-Karte und Audio. Ersteres ist nicht schlimm, da ich sowieso am Kabel hänge und Audio funktioniert seltsamerweise über einen per Bluetooth gekoppelten Lautsprecher. Damit kann ich leben. Ansonsten läuft Linux Mint auf dem iMac ziemlich flott und die iCloud ist zumindest über den Browser auch benutzbar. Insgesamt bin ich sehr zufrieden. <a href="https://linuxsimply.com/linux-basics/os-installation/dual-boot/linux-mint-on-mac/">Hier</a> findest du noch eine sehr ausführliche und bebilderte Anleitung zur Installation.</p>
-<p><strong>Hinweis</strong>: <em>Alle Angaben ohne Gewähr. Ich bin nicht schuld, wenn dein Computer explodiert.</em></p>
+<p>Heute vor 72 Jahren erschien Band eins von J. R. R. Tolkiens <em>The Lord of the Rings</em> auf dem britischen Buchmarkt. Unter dem Titel <em>The Fellowship of the Ring</em> begann damit eine Geschichte, die das Fantasy-Genre für immer prägen sollte. Auch wenn heutzutage vielen Menschen gar nicht bewusst ist, dass die Filme und Spiele tatsächlich eine Buchvorlage haben.</p>
+<p><em>Lord of the Rings: Game One</em> – in Nordamerika unter dem Titel <em>The Fellowship of the Ring: A Software Adventure</em> veröffentlicht gehört zu den frühen Versuchen, die Welt von Tolkien auf den Computer zu portieren. Es wurde vom australischen Entwicklerstudio Beam Software entwickelt und erschien zwischen 1985 und 1986 für Plattformen wie den ZX Spectrum, den Commodore 64, den Amstrad CPC und weitere Systeme. Es war der offiziell lizenzierte Nachfolger des 1982 sehr erfolgreich produzierten <em>The Hobbit</em>, das seinerzeit ein großer Erfolg war. Genau wie sein Vorgänger war auch dieses Spiel ein illustriertes Text-Adventure, in dem man kurze Befehle wie “<em>GO NORTH</em>”, “<em>TAKE SWORD</em>”, “<em>TALK TO GANDALF”</em> eingibt – und als Antwort beschreibende Textpassagen erhält. Manchmal auch nur die Anwort, dass der Befehl nicht verstanden worden ist. Ich glaube, das Spiel versteht um die 400 Wörter, zuviel darf man also nicht erwarten. Dafür ist das Spielsystem recht innovativ: Man kann nicht nur Frodo steuern, sondern auch die Perspektive wechseln, und das Spiel aus der Sicht von Sam, Merry oder Pippin spielen. Das ist für Spiel von 1986 schon bemerkenswert.</p>
+<p><em>Game One</em> deckte nicht die gesamte Trilogie ab, sondern konzentriert sich auf den ersten Band. Der Spielverlauf führt vom Auenland über die Flucht vor den Schwarzen Reitern bis hin zu den Minen von Moria und der Begegnung mit dem Balrog, letztlich bis zur Ankunft bei Galadriel in Lórien. Dabei bleibt das Spiel immer nah an der Buchvorlage, nimmt sich aber auch gewisse Freiheiten, die ein Spiel interessant machen. Als besonderes Gimmick wurde das Spiel mit einer Taschenbuchausgabe des Buches verkauft. O, glückliche Zeiten, als Computerspiele noch physisch in einer Verpackung verkauft wurden!</p>
+<p>Im <a href="https://archive.org/details/msdos_Fellowship_of_the_Ring_The_-_Part_1_1986">Internet Archiv</a> kann man die DOS-Version online spielen, eine <a href="https://ifdb.org/viewgame?id=tpagbmkmud7cl3uz">Anleitung</a> gibt es auch. Im <a href="https://www.tolkienshop.com/contents/en-uk/p6224.html">Tolkien-Shop</a> gibt es sogar noch Originale des Spiels, wahrscheinlich für den ZX Spectrum, zu kaufen.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
